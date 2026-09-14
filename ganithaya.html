@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="si">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ගණිතය | විභාග මංසල</title>
+
+    <link rel="stylesheet" href="ganithaya.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">📐</span>
+                <span>විභාග මංසල</span>
+            </a>
+
+            <nav class="navbar">
+
+                <a href="../index.html">මුල් පිටුව</a>
+                <a href="#papers">ප්‍රශ්න පත්‍ර</a>
+                <a href="#topics">පාඩම්</a>
+                <a href="#about">අප ගැන</a>
+
+            </nav>
+
+            <button class="menu-btn" onclick="toggleMenu()">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <span class="badge">
+                    📐 O/L ගණිතය
+                </span>
+
+                <h1>
+                    ගණිතය
+                    <br>
+                    <span>ලේසියෙන් ඉගෙන ගමු! 🔢</span>
+                </h1>
+
+                <p>
+                    ගණිතය විෂයට අදාළ පසුගිය ප්‍රශ්න පත්‍ර,
+                    ආදර්ශ ප්‍රශ්න පත්‍ර සහ පුහුණු ප්‍රශ්න
+                    විසඳමින් විභාගයට හොඳින් සූදානම් වන්න.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#papers" class="primary-btn">
+                        📚 ප්‍රශ්න පත්‍ර බලන්න
+                    </a>
+
+                    <a href="#topics" class="secondary-btn">
+                        🧠 පාඩම් බලන්න
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <div class="math-circle">
+                    ➗
+                </div>
+
+                <div class="floating-card card-one">
+                    ➕ Algebra
+                </div>
+
+                <div class="floating-card card-two">
+                    📐 Geometry
+                </div>
+
+                <div class="floating-card card-three">
+                    🔢 Numbers
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAPERS -->
+
+    <section class="papers-section" id="papers">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>📚</span>
+
+                <h2>
+                    ගණිතය ප්‍රශ්න පත්‍ර
+                </h2>
+
+                <p>
+                    ඔබට අවශ්‍ය ප්‍රශ්න පත්‍රය තෝරාගෙන පුහුණු වන්න.
+                </p>
+
+            </div>
+
+
+            <div class="papers-grid">
+
+
+                <!-- PAST PAPERS -->
+
+                <div class="paper-card">
+
+                    <div class="paper-icon">
+                        📄
+                    </div>
+
+                    <h3>
+                        පසුගිය ප්‍රශ්න පත්‍ර
+                    </h3>
+
+                    <p>
+                        පසුගිය වසරවල O/L ගණිතය
+                        ප්‍රශ්න පත්‍ර අධ්‍යයනය කරන්න.
+                    </p>
+
+                    <button onclick="openPaper('past')">
+                        බලන්න →
+                    </button>
+
+                </div>
+
+
+                <!-- MODEL PAPERS -->
+
+                <div class="paper-card">
+
+                    <div class="paper-icon">
+                        📝
+                    </div>
+
+                    <h3>
+                        ආදර්ශ ප්‍රශ්න පත්‍ර
+                    </h3>
+
+                    <p>
+                        විභාග ආකෘතියට සමාන ආදර්ශ
+                        ප්‍රශ්න පත්‍ර මඟින් පුහුණු වන්න.
+                    </p>
+
+                    <button onclick="openPaper('model')">
+                        බලන්න →
+                    </button>
+
+                </div>
+
+
+                <!-- PRACTICE -->
+
+                <div class="paper-card">
+
+                    <div class="paper-icon">
+                        ✏️
+                    </div>
+
+                    <h3>
+                        පුහුණු ප්‍රශ්න
+                    </h3>
+
+                    <p>
+                        විවිධ ගණිත පාඩම් ආවරණය වන
+                        පරිදි පුහුණු ප්‍රශ්න විසඳන්න.
+                    </p>
+
+                    <button onclick="openPaper('practice')">
+                        බලන්න →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TOPICS -->
+
+    <section class="topics-section" id="topics">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>🧠</span>
+
+                <h2>
+                    ගණිතය පාඩම්
+                </h2>
+
+                <p>
+                    ප්‍රධාන ගණිත පාඩම් පහසුවෙන් අධ්‍යයනය කරන්න.
+                </p>
+
+            </div>
+
+
+            <div class="topics-grid">
+
+
+                <div class="topic-card">
+
+                    <div class="topic-icon">
+                        ➕
+                    </div>
+
+                    <h3>
+                        වීජ ගණිතය
+                    </h3>
+
+                    <p>
+                        සමීකරණ, ප්‍රකාශන සහ වීජීය
+                        ගණනය කිරීම්.
+                    </p>
+
+                </div>
+
+
+                <div class="topic-card">
+
+                    <div class="topic-icon">
+                        📐
+                    </div>
+
+                    <h3>
+                        ජ්‍යාමිතිය
+                    </h3>
+
+                    <p>
+                        කෝණ, ත්‍රිකෝණ, වෘත්ත සහ
+                        ජ්‍යාමිතික හැඩතල.
+                    </p>
+
+                </div>
+
+
+                <div class="topic-card">
+
+                    <div class="topic-icon">
+                        📊
+                    </div>
+
+                    <h3>
+                        සංඛ්‍යාලේඛන
+                    </h3>
+
+                    <p>
+                        දත්ත, ප්‍රස්තාර සහ
+                        සංඛ්‍යාලේඛන ගණනය කිරීම්.
+                    </p>
+
+                </div>
+
+
+                <div class="topic-card">
+
+                    <div class="topic-icon">
+                        🔢
+                    </div>
+
+                    <h3>
+                        සංඛ්‍යා
+                    </h3>
+
+                    <p>
+                        සංඛ්‍යා, භාග, දශම සහ
+                        ප්‍රතිශත පිළිබඳ දැනුම.
+                    </p>
+
+                </div>
+
+
+                <div class="topic-card">
+
+                    <div class="topic-icon">
+                        📏
+                    </div>
+
+                    <h3>
+                        මිනුම්
+                    </h3>
+
+                    <p>
+                        දිග, වර්ගඵලය, පරිමාව සහ
+                        මිනුම් පිළිබඳ ගණනය කිරීම්.
+                    </p>
+
+                </div>
+
+
+                <div class="topic-card">
+
+                    <div class="topic-icon">
+                        📈
+                    </div>
+
+                    <h3>
+                        ප්‍රස්තාර
+                    </h3>
+
+                    <p>
+                        විවිධ ප්‍රස්තාර කියවීම සහ
+                        නිර්මාණය කිරීම.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about-section" id="about">
+
+        <div class="container about-content">
+
+            <div class="about-icon">
+                📐
+            </div>
+
+            <div class="about-text">
+
+                <span class="small-title">
+                    විභාග මංසල
+                </span>
+
+                <h2>
+                    ගණිතය ඉගෙනීම පහසු කරමු!
+                </h2>
+
+                <p>
+                    ගණිතය විෂයයට ආදරය කරන සිසුන්ට
+                    ප්‍රශ්න පත්‍ර සහ පුහුණු සම්පත් ලබාදී,
+                    විභාගයට විශ්වාසයෙන් මුහුණ දීමට
+                    උපකාර කිරීම අපගේ අරමුණයි.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <h3>
+                📐 විභාග මංසල
+            </h3>
+
+            <p>
+                පාසල් සිසුන්ගේ අධ්‍යාපනික ගමනට අපෙන් අත්වැලක්.
+            </p>
+
+            <p class="copyright">
+                © 2026 විභාග මංසල. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="ganithaya.js"></script>
+
+</body>
+
+</html>

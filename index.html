@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="si">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>විභාග මංසල | පාසල් සිසුන් සඳහා</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            <div class="logo-icon">🎓</div>
+
+            <div>
+                <h2>විභාග මංසල</h2>
+                <span>Learning Portal</span>
+            </div>
+        </div>
+
+
+        <nav class="navbar">
+
+            <a href="#home">මුල් පිටුව</a>
+
+            <a href="#papers">ප්‍රශ්න පත්‍ර</a>
+
+            <a href="#about">අපි ගැන</a>
+
+        </nav>
+
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="small-title">
+                📚 පාසල් සිසුන් සඳහා විශේෂයෙන්
+            </div>
+
+
+            <h1>
+                ඉගෙනගන්න.
+                <br>
+
+                <span>පුහුණු වෙන්න.</span>
+
+                <br>
+
+                ජයගන්න. 🏆
+            </h1>
+
+
+            <p>
+                ඔබේ විභාගයට හොඳින් සූදානම් වීමට
+                ආදර්ශ ප්‍රශ්න පත්‍ර, පුහුණු ප්‍රශ්න
+                සහ ඔබේ දැනුම පරීක්ෂා කිරීමට
+                අවශ්‍ය සියල්ල එකම තැනකින්.
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <button class="primary-btn"
+                        onclick="scrollToPapers()">
+
+                    ප්‍රශ්න පත්‍ර බලන්න
+
+                    <span>→</span>
+
+                </button>
+
+
+                <button class="secondary-btn"
+                        onclick="showInfo()">
+
+                    තව දැනගන්න
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- HERO ILLUSTRATION -->
+
+        <div class="hero-image">
+
+            <div class="circle"></div>
+
+            <div class="student">
+                👩‍🎓
+            </div>
+
+            <div class="book book-1">
+                📘
+            </div>
+
+            <div class="book book-2">
+                📕
+            </div>
+
+            <div class="pencil">
+                ✏️
+            </div>
+
+            <div class="star star-1">
+                ⭐
+            </div>
+
+            <div class="star star-2">
+                ✨
+            </div>
+
+            <div class="floating-card">
+
+                <strong>100+</strong>
+
+                <span>
+                    පුහුණු ප්‍රශ්න
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= STATS ================= -->
+
+    <section class="stats">
+
+        <div class="stat">
+
+            <div class="stat-icon">
+                📚
+            </div>
+
+            <div>
+                <h3>03+</h3>
+                <p>විෂයයන්</p>
+            </div>
+
+        </div>
+
+
+        <div class="stat">
+
+            <div class="stat-icon">
+                📝
+            </div>
+
+            <div>
+                <h3>100+</h3>
+                <p>පුහුණු ප්‍රශ්න</p>
+            </div>
+
+        </div>
+
+
+        <div class="stat">
+
+            <div class="stat-icon">
+                🏆
+            </div>
+
+            <div>
+                <h3>100%</h3>
+                <p>නොමිලේ</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= PAPERS ================= -->
+
+    <section class="papers-section" id="papers">
+
+        <div class="section-header">
+
+            <div>
+
+                <span class="section-label">
+                    🎯 ඔබේ ඉලක්කයට
+                </span>
+
+                <h2>
+                    ප්‍රශ්න පත්‍ර තෝරන්න
+                </h2>
+
+            </div>
+
+            <p>
+                ඔබේ ශ්‍රේණිය හෝ විෂයය තෝරාගෙන
+                පුහුණුව ආරම්භ කරන්න.
+            </p>
+
+        </div>
+
+
+
+        <div class="cards-container">
+
+  <!-- ICT -->
+        <div class="subject-card">
+            <div class="subject-icon">💻</div>
+            <h3>ICT</h3>
+            <p>තොරතුරු හා සන්නිවේදන තාක්ෂණය</p>
+            <a href="ict.html" class="subject-button">
+    ICT බලන්න →
+</a>
+        </div>
+
+        <!-- Mathematics -->
+        <div class="subject-card">
+            <div class="subject-icon">📐</div>
+            <h3>ගණිතය</h3>
+            <p>O/L Mathematics ප්‍රශ්න පත්‍ර</p>
+            <a href="ganithaya.html" class="subject-button">
+    ගණිතය බලන්න →
+</a>
+        </div>
+
+        <!-- Science -->
+        <div class="subject-card">
+            <div class="subject-icon">🔬</div>
+            <h3>විද්‍යාව</h3>
+            <p>O/L Science ප්‍රශ්න පත්‍ර</p>
+           <a href="vidyawa/vidyawa.html" class="subject-button">
+    විද්‍යාව බලන්න →
+</a>
+        </div>
+
+        <!-- English -->
+        <div class="subject-card">
+            <div class="subject-icon">📚</div>
+            <h3>ඉංග්‍රීසි</h3>
+            <p>O/L English ප්‍රශ්න පත්‍ර</p>
+            <a href="english.html" class="subject-button">
+    ඉංග්‍රීසි බලන්න →
+</a>
+        </div>
+
+        <!-- Sinhala -->
+        <div class="subject-card">
+            <div class="subject-icon">📝</div>
+            <h3>සිංහල</h3>
+            <p>O/L Sinhala ප්‍රශ්න පත්‍ර</p>
+            <a href="sinhala/sinhala.html" class="subject-button">
+    සිංහල බලන්න →
+</a>
+        </div>
+
+        <!-- History -->
+        <div class="subject-card">
+            <div class="subject-icon">🏛️</div>
+            <h3>ඉතිහාසය</h3>
+            <p>O/L History ප්‍රශ්න පත්‍ර</p>
+           <a href="ithihasaya.html" class="subject-button">
+    ඉතිහාසය බලන්න →
+</a>
+        </div>
+
+    </div>
+
+    </section>
+
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about-section" id="about">
+
+        <div class="about-icon">
+            💡
+        </div>
+
+
+        <div class="about-content">
+
+            <span class="section-label">
+                අපි ගැන
+            </span>
+
+            <h2>
+                ඉගෙනීම පහසු කරමු.
+            </h2>
+
+            <p>
+                විභාග මංසල යනු පාසල් සිසුන්ට
+                තම දැනුම පරීක්ෂා කරමින්
+                විභාග සඳහා හොඳින් සූදානම් වීමට
+                නිර්මාණය කළ සරල හා පහසු
+                අධ්‍යාපනික වෙබ් අඩවියකි.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            🎓 විභාග මංසල
+        </div>
+
+        <p>
+            පාසල් සිසුන්ගේ ඉගෙනීමට ❤️
+        </p>
+
+        <small>
+            © 2026 විභාග මංසල. සියලු හිමිකම් ඇවිරිණි.
+        </small>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
